@@ -1,0 +1,497 @@
+.cover {
+  height: 100vh;
+  background-image: url("https://optim.tildacdn.pub/tild3031-3561-4336-a130-623165356631/-/format/webp/d2644df2d827b8a220f8.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.cover__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+  background-color: black;
+  z-index: 1;
+}
+
+.cover__wrapper {
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover__content {
+  text-align: center;
+}
+
+.invitation__text {
+  font-family: 'TildaSans', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  width: 780px;
+}
+
+.invitation__block {
+  display: flex;
+  padding: 150px 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover__title {
+  font-family: 'TildaSans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+  position: relative;
+  z-index: 1;
+}
+
+.cover__paragraph {
+  font-size: 24px;
+}
+
+.cover__title-text {
+  text-decoration: line-through;
+  font-size: 130px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.cover__description {
+  font-family: 'TildaSans', sans-serif;
+  text-align: center;
+}
+
+.plan__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.plan__heading {
+  font-family: 'TildaSans', sans-serif;
+  margin-bottom: 100px;
+}
+
+.plan__route {
+  display: flex;
+}
+
+.plan__block-number {
+  position: relative;
+  width: 260px;
+}
+
+.plan__route-block {
+  width: 220px;
+  font-family: 'TildaSans', sans-serif;
+}
+
+.plan__number {
+  position: relative;
+  z-index: 1;
+  width: 34px;
+  height: 34px;
+  background-color: #222;
+  border-radius: 100%;
+  border: 2px solid #fff;
+}
+
+.plan__digit {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.plan__line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  left: -15px;
+  transform: translate(39px, -50%);
+  background-color: #e6e6e6;
+  height: 2px;
+  width: 100%;
+}
+
+.plan__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'TildaSans', sans-serif;
+}
+
+.location__image--1 {
+  background: url(https://optim.tildacdn.pub/tild3531-3062-4330-b534-356537306462/-/resize/500x400/-/format/webp/47.jpg) center center / cover no-repeat;
+  width: 460px;
+  height: 310px;
+}
+
+.locations {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.opacity {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.locations__heading {
+  font-size: 38px;
+  font-family: 'TildaSans', sans-serif;
+  padding-top: 150px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.location__image--2 {
+  background: url(https://optim.tildacdn.pub/tild6536-6137-4139-b637-656361666636/-/resize/500x400/-/format/webp/5733484_169952996945.png) center center / cover no-repeat;
+  width: 460px;
+  height: 310px;
+}
+
+.location__image-block {
+  display: flex;
+  gap: 30px;
+}
+
+.location__text-block {
+  text-align: center;
+  padding: 30px 40px 0;
+}
+
+.location__heading {
+  font-family: 'TildaSans', sans-serif;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.location__paragraph {
+  font-family: 'TildaSans', sans-serif;
+  font-size: 14px;
+}
+
+.party {
+  padding: 150px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #eee;
+  align-items: center;
+}
+
+.party__content-img {
+  width: 35px;
+  height: 35px;
+  display: block;
+}
+
+.party__heading {
+  margin-bottom: 100px;
+  font-size: 38px;
+  font-family: 'TildaSans', sans-serif;
+}
+
+.party__content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.party__content-heading {
+  font-family: 'TildaSans', sans-serif;
+  font-size: 16px;
+}
+
+.party__content-section-paragraph {
+  font-family: 'TildaSans', sans-serif;
+  font-size: 12px;
+}
+
+.party__content-section-img {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.party__content {
+  display: flex;
+  gap: 70px;
+}
+
+.survey-section {
+  font-family: 'TildaSans', sans-serif;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 900px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.survey-section h2 {
+  text-align: center;
+  color: #444;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.survey-section h3 {
+  color: #555;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+#survey-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.category {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category-items label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.category-items input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.button-element {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.survey-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.survey-button:hover {
+  background-color: #45a049;
+}
+
+#results {
+  margin-top: 30px;
+}
+
+#results.hidden {
+  display: none;
+}
+
+#results h2 {
+  text-align: center;
+  color: #444;
+  font-size: 26px;
+}
+
+#results-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#results-table th,
+#results-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#results-table th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+}
+
+#results-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#results-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+#results-table th, #results-table td {
+  border-bottom: 1px solid #ddd;
+}
+
+#results-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+#results-table th {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+}
+
+.invite {
+  padding: 150px 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input {
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.guest-list-section {
+  background-color: #f0f0f0;
+  margin-top: 150px;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.guest-list {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.guest-list .title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.guest-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.guest-table th, .guest-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.guest-table th {
+  background-color: #f2f2f2;
+}
+
+.input-section {
+  padding: 20px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-group .btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-group .btn:hover {
+  background-color: #0056b3;
+}
