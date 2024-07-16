@@ -1,7 +1,7 @@
 {
-  "name": "mesto-project-ff",
-  "version": "1.0.2",
-  "description": "https://github.com/osipqa/mesto-project-ff /n New functions implemented, part of the code rewritten",
+  "name": "wedding-site",
+  "version": "0.0.1",
+  "description": "Wedding site",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
