@@ -1,3 +1,31 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button, input {
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+
 .cover {
   height: 100vh;
   background-image: url("https://optim.tildacdn.pub/tild3031-3561-4336-a130-623165356631/-/format/webp/d2644df2d827b8a220f8.jpg");
@@ -31,21 +59,6 @@
   text-align: center;
 }
 
-.invitation__text {
-  font-family: 'TildaSans', 'Arial', sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  width: 780px;
-}
-
-.invitation__block {
-  display: flex;
-  padding: 150px 0;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
 .cover__title {
   font-family: 'TildaSans', sans-serif;
   display: flex;
@@ -66,9 +79,30 @@
   font-weight: 700;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
 .cover__description {
   font-family: 'TildaSans', sans-serif;
   text-align: center;
+}
+
+.invitation__text {
+  font-family: 'TildaSans', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  width: 780px;
+}
+
+.invitation__block {
+  display: flex;
+  padding: 150px 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .plan__container {
@@ -343,8 +377,7 @@
   margin-top: 20px;
 }
 
-#results-table th,
-#results-table td {
+#results-table th, #results-table td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
@@ -377,57 +410,6 @@
   padding: 10px;
   text-align: center;
   border-bottom: 2px solid #ddd;
-}
-
-.invite {
-  padding: 150px 0;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-li,
-figure {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: inherit;
-}
-
-button,
-input {
-  color: currentColor;
-  font-family: inherit;
-  font-size: inherit;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
 }
 
 .guest-list-section {
@@ -494,4 +476,221 @@ ol {
 
 .input-group .btn:hover {
   background-color: #0056b3;
+}
+
+@media (max-width: 1200px) {
+  .cover__title-text {
+    font-size: 100px;
+  }
+  .plan__route {
+    flex-direction: column;
+  }
+  .location__image--1, .location__image--2 {
+    width: 100%;
+    height: auto;
+  }
+  .plan__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .plan__line {
+    display: none;
+  }
+  .plan__block-number {
+    width: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cover__title-text {
+    font-size: 70px;
+  }
+  .plan__route {
+    flex-direction: column;
+    align-items: center;
+  }
+  .location__image-block {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .location__text-block {
+    padding: 20px 10px;
+  }
+  .party__content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .survey-section {
+    padding: 20px;
+  }
+  .survey-button {
+    width: 100%;
+    padding: 10px;
+  }
+  .guest-list-section {
+    padding: 20px;
+  }
+  .input-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Общие стили для мобильных устройств */
+@media (max-width: 480px) {
+  .cover__title-text {
+    font-size: 50px;
+  }
+
+  .cover__paragraph {
+    font-size: 18px;
+  }
+
+  .cover__title {
+    gap: 50px;
+  }
+
+  .invitation__text {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .invitation__block {
+    padding: 100px 0;
+  }
+
+  .plan__container {
+    margin: 50px 0;
+  }
+
+  .plan__route {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan__number {
+    width: 24px;
+    height: 24px;
+  }
+
+  .plan__digit {
+    font-size: 12px;
+  }
+
+  .plan__line {
+    width: 90%;
+    transform: translate(10px, -50%);
+  }
+
+  .plan__title {
+    font-size: 16px;
+  }
+
+  .locations__heading {
+    font-size: 28px;
+    padding-top: 100px;
+    margin-bottom: 40px;
+  }
+
+  .location__image-block {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .location__image--1, .location__image--2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .location__text-block {
+    padding: 20px 10px 0;
+  }
+
+  .location__heading {
+    font-size: 24px;
+  }
+
+  .location__paragraph {
+    font-size: 12px;
+  }
+
+  .party__heading {
+    margin-bottom: 50px;
+    font-size: 28px;
+  }
+
+  .party__content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .party__content-section {
+    align-items: center;
+  }
+
+  .party__content-heading {
+    font-size: 14px;
+  }
+
+  .party__content-section-paragraph {
+    font-size: 12px;
+  }
+
+  .survey-section {
+    padding: 20px;
+  }
+
+  .survey-section h2 {
+    font-size: 24px;
+  }
+
+  .survey-section h3 {
+    font-size: 18px;
+  }
+
+  .category {
+    min-width: 100%;
+    padding: 10px;
+  }
+
+  .category-items label {
+    font-size: 14px;
+  }
+
+  .button-element {
+    margin-top: 20px;
+  }
+
+  .survey-button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #results h2 {
+    font-size: 24px;
+  }
+
+  #results-table th, #results-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .guest-list-section {
+    padding: 20px;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-group input {
+    width: 100%;
+  }
+
+  .input-group .btn {
+    width: 100%;
+  }
 }
